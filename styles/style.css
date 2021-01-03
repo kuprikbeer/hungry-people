@@ -43,21 +43,25 @@ ul, li{
 li a{
     text-transform: uppercase;
     text-align: center;
-    padding-top: 40px;
     display: block;
     color: #fff; 
     opacity: 0.8;
+    padding-top: 46px;
+    height: 103px;
 }
 .li1,
 .li2{
     display: flex;
     justify-content:space-around;
     width: 39%;
+    align-items: center;
+    height: 100px;
 }
 li a:hover{
-    border-bottom: 3px solid #E8C300;
+    border-bottom: 2px solid #E8C300;
     transition: .2s;
     opacity: 1;
+    color:#E8C300 ;
 }
 .nav{
     height: 100px;
@@ -561,6 +565,7 @@ div:hover~.yellow-sqr,
     border-right: 1px solid #CCCCCCFF;
     text-align: center;
     padding: 15px 35px;
+    color: #000;
 }
 .menu-item:last-child{
     border: none;
@@ -598,7 +603,7 @@ div:hover~.yellow-sqr,
     top: 249px;
     left: 50%;
     width: 475px;
-    height: 80px;
+    height: 13%;
     text-align: left;
     font-family: 'Fredericka the Great', cursive;
     
@@ -614,7 +619,7 @@ div:hover~.yellow-sqr,
     top: 249px;
     right: 50%;
     width: 475px;
-    height: 80px;
+    height: 13%;
     text-align: left;
     font-family: 'Fredericka the Great', cursive;
 }
@@ -823,7 +828,14 @@ textarea {
     .event1-pictures:before,
     .event2-pictures:after
     {
-        display: none;
+        height: 40px;
+        top: 267px;
+    }
+    .event1-pictures:before{
+        left: 46%;
+    }
+    .event2-pictures:after{
+        right: 46%;
     }
     .form-text {
         margin-right: 0px;
@@ -886,6 +898,12 @@ textarea {
     .specialties{
         background-repeat: no-repeat;
         background-size: cover;
+    }
+    .event1-pictures:before,
+    .event2-pictures:after
+    {
+        height: 80px;
+        top: 248px;
     }
 }
  @media(max-width:1050px){
@@ -1050,6 +1068,14 @@ textarea {
     .form-wrapper{
         justify-content: space-between;
     }
+    .li1, .li2{
+        height: 200px;
+        padding-top: 20px;
+    }
+    li a{
+        height: 0;
+        padding-top: 0;
+    }
  }
  @media(max-width:640px){
     .scroll{
@@ -1068,6 +1094,17 @@ textarea {
     }
     .menu-item{
         font-size: 10px;
+    }
+    .event1-pictures:before,
+    .event2-pictures:after{
+      height: 40px;
+      top: 267px;
+    }
+}
+@media(max-width:530px){
+    .event1-pictures:before,
+    .event2-pictures:after{
+     display: none;
     }
 }
 @media(max-width:440px){
