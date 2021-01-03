@@ -1,0 +1,1126 @@
+/* общие стили */
+*{
+    box-sizing: border-box;
+}
+button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    color: #000;
+}
+a{
+    text-decoration: none;   
+}
+a:visited , a:link{
+    text-decoration: none;
+}
+h1,h2{
+    margin: 0;
+    padding: 0;
+}
+ul, li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+/* контейнер */
+.conteiner{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0px 10px;
+}
+/* шапка */
+.ul{
+    display: flex;
+    justify-content: space-around;
+}
+li a{
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    color: #fff; 
+    opacity: 0.8;
+    padding-top: 46px;
+    height: 103px;
+}
+.li1,
+.li2{
+    display: flex;
+    justify-content:space-around;
+    width: 39%;
+    align-items: center;
+    height: 100px;
+}
+li a:hover{
+    border-bottom: 2px solid #E8C300;
+    transition: .2s;
+    opacity: 1;
+    color:#E8C300 ;
+}
+.nav{
+    height: 100px;
+    border-bottom: 1px solid #000;
+    position: relative;
+}
+.nav:after{
+    content: "";
+    width: 530px;
+    height: 1px;
+    background-color: #fff;
+    opacity: .2;
+    position: absolute;
+    top: 100px;
+    left: 0;
+}
+.nav:before{
+    content: "";
+    width: 530px;
+    height: 1px;
+    background-color: #fff;
+    opacity: .2;
+    position: absolute;
+    top: 100px;
+    right:0;
+}
+/* главный экран */
+.header{
+    background-image: url(../images/header-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height:790px;
+}
+.title{
+    color: #fff;
+    /* font-family: 'Open Sans', sans-serif; */
+    /* font-family: 'Chewy', cursive; */
+    /* font-family: 'Delius', cursive; */
+    font-family: 'Fredericka the Great', cursive;
+    /* font-family: 'Knewave', cursive; */
+    /* font-family: 'Leckerli One', cursive; */
+    /* font-family: 'Lemonada', cursive; */
+    font-size: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+ }
+ .title:before{
+    content: "";
+    width: 60px;
+    height: 5.11px;
+    background: #E8C300;
+    border-radius: 5px;
+    position: absolute;
+    top: 135px;
+    text-align: center;
+    transform: translate(-50%);
+ } 
+ .title:after{
+    content: "";
+    width: 1px;
+    height: 650px;
+    background-color: #fff;
+    opacity: .1;
+    position: absolute;
+    top: -200px;
+    right:50%;
+ }
+.suptitle{
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 230px;
+    font-style: normal;
+    font-weight: bold; 
+    line-height: 14px;
+    letter-spacing: 0.5em;
+    text-transform: uppercase;  
+    position: relative;
+}
+.suptitle:before{
+    content: "";
+    width: 1px;
+    height: 700px;
+    background-color: #fff;
+    opacity: .1;
+    position: absolute;
+    top: -229px;
+    right:11.11%;
+}
+.suptitle:after{
+    content: "";
+    width: 1px;
+    height: 700px;
+    background-color: #fff;
+    opacity: .1;
+    position: absolute;
+    top: -229px;
+    left:11.11%;
+}
+.buttons-box{
+    display: flex;
+    justify-content: center;
+}
+.buttons-box:before{
+    content: "Mon-Fri:8AM-10PM,Sat-San:8PM-3AM";
+    color: #fff;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 12px;
+    position: absolute;
+    top: 395px;
+    left:3%;
+    transform: rotate(-90deg);
+}
+.buttons-box button{
+    width: 200px;
+    height: 60px;
+    background-color: transparent;
+    margin-top: 60px;
+    border-radius:5px ;
+    border: 1px solid #fff;
+    opacity: 0.7;   
+}
+.btn1{
+    margin-right: 20px;
+}
+.btn2{
+    margin-left:20px;
+}
+button a{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    display: block;
+    height: 100%;
+    padding-top: 20px; 
+}
+.buttons-box button:hover{
+    background-color: #E8C300;
+    transition: .2s;
+    opacity: 1;
+}
+/* лого штурвал */
+.img{
+    margin-top: 25px;
+    transform: rotate(360deg);
+    transition: 3s;
+}
+.img:hover{
+    transform: rotate(720deg);
+    transition: ease 4s;
+}
+/* скролл */
+.scroll{
+    display: flex;
+    justify-content: center;
+    margin-top: 65px;
+}
+/* социальные сети */
+.social{
+    position: absolute;
+    right:8%;
+    top: 275px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: 250px;   
+}
+.social-item:hover{   
+    transition: .1s;
+    border: 0px solid transparent;
+    border-radius: 50%;
+    box-shadow:0 0 20px 15px #E8C300 ; 
+}
+/* о нас */
+.about{
+    display: flex;
+    justify-content: space-around;
+}
+.about-texts{
+    width: 45%;
+}
+.about-title{
+    text-align: center;
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 36px;
+    line-height: 48px;
+    text-transform: uppercase;
+    margin-top: 200px;
+}
+.about-subtitle{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    margin-top: 30px;
+    position: relative;
+}
+.about-subtitle:before{
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 5.11px;
+    background: #E8C300;
+    border-radius: 5px;
+    left: 43%;
+    top: -19px;
+}
+.about-text{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    margin-top: 20px;
+}
+.about-pictures{
+    margin-top: 50px;
+    position: relative;
+
+}
+/* желтый квадрат */
+.yellow-sqr{
+    position: absolute;
+    right: -27%;
+    top: 65px;
+}
+div:hover~.yellow-sqr,
+.yellow-sqr:hover{
+    transform: rotate(360deg);
+    transition: ease 4s;
+}
+
+/* команда */
+.team{
+    background-image: url(../images/team-bg.jpg);
+    width: 100%;
+    min-height: 675px;
+    margin-top: 50px;
+}
+.team-box{
+    display: flex;
+    justify-content: space-around;
+}
+.team-texts{
+    width: 45%;
+    color: #fff;
+}
+.team-pictures{
+    position: relative;
+}
+.team-box .yellow-sqr{
+    position: absolute;
+    right:55%;
+    top: 60px;
+}
+.team-title{
+    text-align: center;
+    font-family: 'Fredericka the Great', cursive;
+    color: #fff;
+    font-size: 36px;
+    line-height: 48px;
+    text-transform: uppercase;
+    margin-top: 200px;
+}
+.team-subtitle{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    margin-top: 30px;
+    position: relative;
+}
+.team-subtitle:before{
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 5.11px;
+    background: #E8C300;
+    border-radius: 5px;
+    left:43.9%;
+    top: -19px;
+}
+.team-text{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    margin-top: 20px;
+}
+.name{
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding-top: 40px;
+    letter-spacing: 0.5em;
+    font-weight: bold;
+}
+/* форма */
+.form-box{
+    display: flex;
+    justify-content: space-around;
+}
+.form-title{
+    text-align: center;
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 36px;
+    line-height: 48px;
+    text-transform: uppercase;
+    margin-top: 130px;
+    margin-bottom: 30px;
+    position: relative;
+}
+.form-title:before{
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 5.11px;
+    background: #E8C300;
+    border-radius: 5px;
+    left:42.9%;
+    top: 55px;
+}
+.form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.form-text{
+    margin-right: 100px;
+}
+.form-pictures{
+    position: relative;
+    margin-top: 30px;
+}
+ .form-pictures .yellow-sqr{
+    position: absolute;
+    right: -27%;
+    top: 65px;
+}
+.form-btn{
+    width: 100%;
+    height: 60px;
+    background-color: transparent;
+    margin-top: 60px;
+    border-radius:5px ;
+    background-color: #E8C300;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #fff;
+}
+.booking-work{
+    color: rgba(51, 51, 51, 0.5);
+    font-style: normal;
+    font-weight: bold;
+    line-height: 12px;
+    text-align: center;
+}
+/* фирменные блюда */
+.specialties{
+    background-image: url(../images/special.jpg);
+    width: 100%;
+    min-height: 675px;
+    margin-top: 50px;
+}
+.special-box{
+    display: flex;
+}
+.special-texts{
+    width: 45%;
+    color: #fff;
+    margin-left: 95px;
+}
+.special-pictures{
+    position: relative;
+}
+.special-box .yellow-sqr{
+    position: absolute;
+    right:55%;
+    top: 60px;
+}
+.special-title{
+    text-align: center;
+    font-family: 'Fredericka the Great', cursive;
+    color: #fff;
+    font-size: 36px;
+    line-height: 48px;
+    text-transform: uppercase;
+    margin-top: 200px;
+}
+.special-subtitle{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    margin-top: 30px;
+    position: relative;
+}
+.special-subtitle:before{
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 5.11px;
+    background: #E8C300;
+    border-radius: 5px;
+    left: 45.79%;
+    top: -19px;
+}
+.special-text{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    margin-top: 20px;
+}
+.special-name{
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding-top: 40px;
+    letter-spacing: 0.5em;
+    font-weight: bold;
+}
+/* меню */
+.menu-title{
+    text-align: center;
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 36px;
+    line-height: 48px;
+    text-transform: uppercase;
+    margin-top: 100px;
+}
+.menu-box{
+    display: flex;
+    justify-content: center;
+}
+.menu-subtitle{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    margin-top: 30px;
+    position: relative;
+    max-width: 700px;
+}
+.menu-subtitle:before{
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 5.11px;
+    background: #E8C300;
+    border-radius: 5px;
+    left:45.71%;
+    top: -18px;
+}
+.menu-nav{
+    max-width: 820px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.menu-item:active{
+    color:  #E8C300;
+}
+.menu-item:hover{
+    color:  #E8C300;
+}
+/* .menu-block:target {
+    display: block;
+} */
+.menu-block_inner{
+    display: flex;
+}
+.menu-colomn{
+    width: 33.333%;
+    text-align: center;
+}
+.menu-item__title{
+    font-size: 18px;
+    line-height: 18px;
+    text-transform: uppercase;
+    padding-top: 10px;
+}
+.menu-item__subtitle{
+    color:#CCCCCCFF;
+    padding-bottom: 10px;
+}
+.menu-item{
+    text-transform: uppercase;
+    font-weight: bold;
+    border-right: 1px solid #CCCCCCFF;
+    text-align: center;
+    padding: 15px 35px;
+    color: #000;
+}
+.menu-item:last-child{
+    border: none;
+}
+/* события */
+.events{
+    background-image: url(../images/events-bg.jpg);
+    width: 100%;
+    min-height: 675px;
+    margin-top: 50px
+}
+.events-box{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: -15px;
+}
+.event1-pictures .yellow-sqr{
+    position: absolute;
+    right: 245px;
+    top: 60px;
+}
+.event2-pictures .yellow-sqr{
+    position: absolute;
+    right: -155px;
+    top: 60px;
+}
+.event1-pictures:before{
+    transform: rotate(90deg);
+    content: "  weddings";
+    position: absolute;
+    background-color: #000;
+    color: #fff;
+    font-size: 24px;
+    text-transform: uppercase;
+    top: 249px;
+    left: 50%;
+    width: 475px;
+    height: 13%;
+    text-align: left;
+    font-family: 'Fredericka the Great', cursive;
+    
+}
+.event2-pictures:after{
+    transform: rotate(-90deg);
+    content: "  corporate parties";
+    position: absolute;
+    background-color: #000;
+    color: #fff;
+    font-size: 24px;
+    text-transform: uppercase;
+    top: 249px;
+    right: 50%;
+    width: 475px;
+    height: 13%;
+    text-align: left;
+    font-family: 'Fredericka the Great', cursive;
+}
+.event1-pictures,
+.event2-pictures{
+    position: relative;
+}
+.menu-body{
+    padding-bottom: 50px;
+}
+.event-title_box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.event-title{
+    color: #fff;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+    padding-top: 50px;
+}
+.event-subtitle{
+    font-style: normal;
+    font-weight: bold;
+    line-height: 12px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+}
+/* фото */
+.place-box{
+    display: flex;
+    flex-grow: 1;
+}
+.place-img{
+    width: 25%;
+    display: block;
+}
+.place-img img{
+   width: 100%;
+}
+/* контакты */
+.contact-title{
+    text-align: center;
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 36px;
+    line-height: 48px;
+    text-transform: uppercase;
+    margin-top: 100px;
+}
+.contact-box{
+    display: flex;
+    justify-content: center;
+}
+.contact-subtitle{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    margin-top: 30px;
+    position: relative;
+    max-width: 700px;
+    margin-bottom: 50px;
+}
+.contact-subtitle:before{
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 5.11px;
+    background: #E8C300;
+    border-radius: 5px;
+    left:45.71%;
+    top: -18px;
+}
+.contact-adress, .contact-phone, .contact-mail{
+    width: 17%;
+    text-align: center;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 12px;
+}
+/* форма 2 */
+.form-wrapper{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    margin-top: 15px;
+
+}
+.submit{
+    display: block;
+    width:49%;
+    height: 60px;
+    border-radius:5px ;
+    background-color: #E8C300;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #fff;
+}
+/* карта */
+.map{
+    margin-top: 100px;
+}
+/* подвал */
+.footer-text{
+    font-style: normal;
+    font-weight: normal;
+    line-height: 12px;
+    color: rgba(255, 255, 255, 0.5);
+    text-transform: uppercase;
+    text-align:center;
+    background-color: #1A1A1AFF;
+    height: 100px;
+    padding-top: 44px;
+
+}
+/* стили для форм */
+.input{
+    display: block;
+    height: 60px;
+    background-color: #E5E5E5FF;
+    border-radius: 5px;
+    width: 48.2%;
+    color:#8C8C8CFF;
+    text-align: center;
+    margin: 0px 0px 10px 0px;
+}
+.input.contact{
+    width: 32.8%;
+    
+}
+.input.contact:last-child{
+    margin-right: 0;
+}
+.input-box{
+    display: flex;
+    justify-content: space-between;
+}
+.area{
+    display: block;
+    width: 100%;
+    background-color:#E5E5E5FF;
+    border-radius: 5px;
+}
+input,
+textarea {
+    outline:none;
+    border:none;
+    box-shadow: none;
+}
+/* адаптив */
+@media(max-width:1420px){
+    .conteiner{
+        max-width: 1100px;
+    }
+    .header{
+        min-height:750px;
+    }
+    .title:before{
+        top: 120px;
+    }
+    .form-btn{
+        margin-top: 10px;
+    }
+    h1{
+        font-size: 1.7em
+    }
+    .input{
+        width: 100%;
+        margin-left: 0;
+    }
+    .booking-work{
+        margin-top: 50px;
+    }
+    .about-title{
+        margin-top: 170px;
+    }
+    .team-title{
+        margin-top: 140px;
+    }
+    .form-title{
+        margin-top: 70px;
+    }
+    .special-title{
+        margin-top: 100px;
+    }
+    .menu-title{
+        margin-top: 50px;
+    }
+    .contact-title{
+        margin-top: 50px;
+    }
+    .team-texts,
+    .special-texts{
+        margin-left: 0;
+    }   
+    .form-btn{
+        width: 100%;
+    }  
+    .event1-pictures:before,
+    .event2-pictures:after
+    {
+        height: 40px;
+        top: 267px;
+    }
+    .event1-pictures:before{
+        left: 46%;
+    }
+    .event2-pictures:after{
+        right: 46%;
+    }
+    .form-text {
+        margin-right: 0px;
+    }
+    .contact-adress,
+    .contact-phone, 
+    .contact-mail{
+        font-size: 11px;
+    }
+}
+
+@media(max-width:1240px){
+    .conteiner{
+        max-width: 1000px;
+    }
+    h1{
+        font-size: 1.55em;
+    }
+    .contact-adress,
+    .contact-phone, 
+    .contact-mail{
+        font-size: 10px;
+    }
+    .title:before{
+        top: 110px;
+    }
+    .team-title{
+        margin-top: 140px;
+    }
+} 
+@media(max-width:1170px){
+    .conteiner{
+        max-width: 900px;
+    }
+    h1{
+        font-size: 1.4em;
+    }
+    .events-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;  
+    }
+    .event1-pictures:before,
+    .event2-pictures:after
+    {
+        display: block;
+    }
+    .event-subtitle{
+    padding:0px 0px 40px 0px;
+    }
+    .title:before{
+        top: 103px;
+    }
+
+    .team-title{
+        margin-top: 110px;
+    }
+    .events,
+    .team,
+    .specialties{
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .event1-pictures:before,
+    .event2-pictures:after
+    {
+        height: 80px;
+        top: 248px;
+    }
+}
+ @media(max-width:1050px){
+    .conteiner{
+        max-width: 770px;
+    }
+    h1{
+        font-size: 1.15em;
+    }
+    .about{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+      }
+    .about-texts{
+        width: 100%;
+      }
+    .about-title {
+        margin-top: 70px;
+     }
+    .about-pictures {
+        margin-top:0px;
+    }
+    .team-box{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items:center;
+    }
+    .team-texts{
+        width: 100%;
+    }
+    .team-subtitle:before,
+    .form-title::before,
+    .special-subtitle:before,
+    .about-subtitle:before{
+       left: 50%;
+       transform: translate(-50%);
+    }
+    .team-title {
+        margin-top: 70px;
+    }
+    .form-box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;  
+    }
+    .input{
+        width: 49%;
+        margin-left: 0;
+    }
+    .booking-work {
+        margin-top:0px;
+    }
+    .form-pictures{
+        margin-top: 0;
+    }
+    .special-box{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items:center;
+    }
+    .special-texts{
+        width: 100%;
+    }
+    .special-pictures {
+        margin-top:0px;
+    }
+    .about-title{
+        margin-top:50px;
+    }
+    .team-title,
+    .team-title,
+    .form-title,
+    .special-title,
+    .menu-title,
+    .contact-title{
+        margin-top:50px;
+    }
+    .contact-adress,
+    .contact-phone, 
+    .contact-mail{
+        font-size: 8px;
+    }
+    .buttons-box::before{
+        left: -4%;
+    }
+    .social{
+        right: 3%;
+    }
+    .special-pictures,
+    .team-pictures{
+        margin-left: 0;
+    }
+    .title:before{
+        top: 88px;
+    }
+    .menu-item{
+        border-right: none;
+        padding: 15px 0px;
+        font-size: 11px;
+    }
+ }
+ @media(max-width:740px){
+    .conteiner{
+        max-width: 600px;
+    }
+    h1{
+        font-size: 1.4em;
+    }
+    ul{
+       justify-content: start;
+       align-items: start;
+   }
+    .li1,.li2{
+       flex-direction: column;
+   }
+    .about-picture img,
+    .team-picture img,
+    .form-picture img,
+    .special-picture img,
+    .event1-picture img,
+    .event2-picture img{
+        display: block;
+        width:100%;
+    }
+    .yellow-sqr{
+       display: none;
+   }
+    .title::before {
+        top: 180px;
+    }
+    .suptitle{
+        margin-top: 150px;
+    }
+    li a:hover{
+        border-bottom:none;
+        color:  #E8C300;
+    }
+    .place-box{
+        flex-wrap: wrap;
+    }
+    .place-img{
+        width: 50%;
+    }
+    .place-img img{
+        margin-top: -4px;
+    }
+    .submit{
+        width: 25%;
+        margin-left: 10px;
+        font-size: 10px;
+    }
+    .contact-adress,
+    .contact-phone, 
+    .contact-mail{
+       width: 23%;
+    }
+    .form-wrapper{
+        justify-content: space-between;
+    }
+    .li1, .li2{
+        height: 200px;
+        padding-top: 20px;
+    }
+    li a{
+        height: 0;
+        padding-top: 0;
+    }
+ }
+ @media(max-width:640px){
+    .scroll{
+        display: none;
+    }
+    .social{
+        flex-direction: row;
+        min-height:62px;
+        width: 250px;
+        position: inherit;
+        margin: 0 auto;
+        margin-top: 70px;
+    }
+    .buttons-box::before{
+        display: none;
+    }
+    .menu-item{
+        font-size: 10px;
+    }
+    .event1-pictures:before,
+    .event2-pictures:after{
+      height: 40px;
+      top: 267px;
+    }
+}
+@media(max-width:530px){
+    .event1-pictures:before,
+    .event2-pictures:after{
+     display: none;
+    }
+}
+@media(max-width:440px){
+    .place-img{
+        width: 100%;
+    }
+    h1{
+        font-size: 1.3em;
+    }
+     .contact-adress,
+     .contact-phone,
+     .contact-mail{
+        width: 25%;
+        font-size: 7px;
+    }
+    .submit{
+        font-size: 9px;
+    }
+}
